@@ -29,7 +29,7 @@ const activateEyeDropper = () => {
     setTimeOut(async () => {
         try {
             //Opening the eye dropper and getting the selected color
-            const eyeDropper = new EyeDropper();
+            const eyeDropper = new eyeDropper();
             const {sRGBHex} = await eyeDropper.open();
             navigator.clipboard.writeText(sRGBHex);
 

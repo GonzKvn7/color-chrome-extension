@@ -16,7 +16,7 @@ body {
     width: 350px;
     background: #fff;
 }
-.popup :where(.picker, header, .all-colors) {
+.popup :where(.picker, header, .color, .all-colors) {
     display:flex;
     align-items: center;
 }
@@ -52,6 +52,12 @@ header .clear-all {
     font-size: 0.9rem;
     color: #5372f0;
 }
+//added 
+
+.all-colors {
+    margin: 10px 0;
+}
+
 header .clearall:hover{
     color: #143feb;
 }
@@ -69,7 +75,7 @@ header .clearall:hover{
     margin-bottom: 10px;
     width: calc(100% / 3);
 }
-.all-colors .rect {
+.all-colors .color .rect {
     height: 21px;
     width: 21px;
     display: block;
@@ -82,3 +88,10 @@ header .clearall:hover{
     text-transform: uppercase;
     font-family: "Open sans";
 }
+.all-colors .color .rect {
+    display: block;
+    height: 22px;
+    width: 22px;
+    background: #5372f0;
+}
+
